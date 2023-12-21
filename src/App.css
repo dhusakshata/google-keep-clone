@@ -1,38 +1,271 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  box-sizing: border-box;
+  width: 98.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ 
+.Main{
+  
+  display: flex;
+  width: 100%;
+  height: auto;
+ 
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+  background-color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+border:1px solid rgb(206, 200, 200);
+  width: 100%;
+  height: auto;
+  
+
+}
+.nav-left{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+
+.search-bar {
+  display: flex;
+
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  width: 650px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding:15px;
+  background-color: #303131;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 80px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  gap: 30px;
+  width: 45px;
+  left:5px;
+  position: relative;
+ 
+}
+
+
+img{
+  width: 40px;
+}
+
+h1 {
+color:gray;
+font-size: 20px;
+}
+h1:hover{
+  text-decoration: underline;
   }
+
+form {
+  position: relative;
+  width: 100%;
+  margin:20px ;
+  background: #fff;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+  top: -40px;
+  right:-60%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form input {
+  width: 80%;
+  border: none;
+  padding: 4px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+form textarea {
+  width: 80%;
+  border: none;
+  padding: 4px 10px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+
+form button{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 18px;
+  bottom: -18px;
+  background: rgb(255, 200, 18);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgb(165, 165, 165);
+  cursor: pointer;
+  outline: none;
+}
+.titons{
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  left: 18px;
+  bottom: -5px;
+  width: 36px;
+  height: 36px;
+  gap:20px;
+  cursor: pointer;
+
+}
+/* for Note styling part here*/
+.fornote{
+  width: 50%; 
+  margin-bottom: 20px;
+}
+
+.note h2 {
+  color:black;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: 80%;
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+
+.fornote button{
+   display: flex;
+   justify-content: flex-end;
+  float: right;
+  color:white;
+  background-color:  rgb(255, 200, 18);;
+  cursor: pointer;
+  outline: none;
+  border: none;
+ border-radius: 50%;
+  width: 36px;
+  height: 36px;
+ 
+} 
+.note-btn{
+  display: flex;
+  flex-direction: row;
+ position: absolute;
+justify-content: center;
+  align-items: center;
+  right: -15px;
+  bottom: -2px;
+  gap:10px;
+
+}
+.colorpicker{
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(224, 166, 166);
+  right: 80px;
+  bottom: -30px;
+  border: none;
+  border-radius: 50%;
+}
+
+
+.sidebar {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: hsl(0, 0%, 100%);
+  margin:0;
+  text-align: center;
+  height: 100%;
+  padding: 40px;
+}
+
+.sidebar button {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+.addnotes{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 40px;
+  margin: 0;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  
+  .search-bar input[type="text"] {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+ .icon{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  gap: 5px;
+  width: 10px;
+  left:-20px;
+  
+ }
+  form {
+    top: 0;
+    right: 0;
+    margin: 10px; 
   }
+
+  .fornote {
+    width: 100%;
+  }
+
+  .note-btn {
+    flex-direction: row; 
+    gap: 10px; 
+    margin-top: 10px; 
+}
 }
