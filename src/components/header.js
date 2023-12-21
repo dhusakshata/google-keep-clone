@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import logo from '../Images/logo.jpg';
-import MenuIcon from '@mui/icons-material/Menu';
 import { List, Refresh, Settings  } from '@mui/icons-material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import AppsIcon from '@mui/icons-material/Apps';
@@ -31,7 +30,7 @@ const Header = ({ onSearch }) => {
       <button onClick={handleSearch}>Search</button>
     </div>
     <div className='icons'>
-    <MenuIcon/>
+    
     <Refresh/>
     <List/>
     <Settings/>
