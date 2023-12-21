@@ -246,9 +246,9 @@ justify-content: center;
   }
  .icon{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content:flex-end;
-  gap: 5px;
+  gap: 0px;
   width: 10px;
   left:-20px;
   
