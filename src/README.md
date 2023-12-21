@@ -19,7 +19,7 @@ Follow these instructions to run the application locally.
    ```bash
    git clone https://github.com/dhusakshata/google-keep-clone.git
    
-5. Deployment Link:
+5. Deployment Link:https: //google-keep-fawn.vercel.app/
 
 
 ### Features
